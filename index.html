@@ -33,6 +33,7 @@
           <li><a href="#day3">day 3</a></li>
           <li><a href="#day4">day 4</a></li>
           <li><a href="#day5">day 5</a></li>
+          <li><a href="#contact">contact me</a></li>
         </ul>
       </nav>
     </header>
@@ -207,7 +208,7 @@
       <hr />
 
       <article>
-        <h3>day 6, dated august 22, 2025</h3>
+        <h2>day 6, dated august 22, 2025</h2>
         <p>learning tables</p>
         <table>
           <caption>
@@ -259,6 +260,82 @@
             </tr>
           </tfoot>
         </table>
+      </article>
+
+      <hr />
+
+      <article id="contact">
+        <h2>day 7, dated august 23, 2025</h2>
+        <p>learning contact forms</p>
+
+        <section>
+          <h3>contact me here!</h3>
+          <p>id really like to hear from you &lt;3</p>
+
+          <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+              <legend>personal info</legend>
+              <p>
+                <label for="firstName">first name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required />
+              </p>
+              
+              <p>
+                <label for="lastName">last name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required />
+              </p>
+
+              <p>
+                <label for="password">password:</label>
+                <input type="password" name="password" id="password" placeholder="Your secret" required />
+              </p>
+
+              <p>
+                <label for="phone">phone number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{5}[0-9]{5}" />
+              </p>
+
+              <p>
+                <label for="decade">favorite decade:</label>
+                <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980" />
+              </p>
+        
+              <p>
+                <label for="coffee">favorite coffee:</label>
+                <select name="coffee" id="coffee" multiple size="5">
+                  <optgroup label="regular coffee" >
+                    <option value="regular coffee">regular coffee</option>
+                    <option value="latte" selected>latte</option>
+                  </optgroup>
+                  <optgroup label="espresso drinks">
+                    <option value="iced coffee">iced coffee</option>
+                    <option value="cappucino">cappucino</option>
+                    <option value="americano">americano</option>
+                    <option value="cortado">cortado</option>
+                  </optgroup>
+                  <option value="other">other</option>
+                </select>
+              </p>
+
+              <!-- <p>
+              <label for="coffee">favourite coffee:</label>
+              <input type="text" name="coffee" id="coffee" list="coffee-list" />
+              <datalist id="coffee-list">
+                <option value="coffee"></option>
+                <option value="latte"></option>
+                <option value="espresso"></option>
+                <option value="cortado"></option>
+                <option value="americano"></option>
+                <option value="other"></option>
+              </datalist>
+            </p> -->
+            </fieldset>
+
+            <br>
+
+
+          </form>
+        </section>
       </article>
     </main>
 
