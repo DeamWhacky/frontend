@@ -279,7 +279,7 @@
                 <label for="firstName">first name:</label>
                 <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required />
               </p>
-              
+
               <p>
                 <label for="lastName">last name:</label>
                 <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required />
@@ -299,11 +299,11 @@
                 <label for="decade">favorite decade:</label>
                 <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980" />
               </p>
-        
+
               <p>
                 <label for="coffee">favorite coffee:</label>
                 <select name="coffee" id="coffee" multiple size="5">
-                  <optgroup label="regular coffee" >
+                  <optgroup label="regular coffee">
                     <option value="regular coffee">regular coffee</option>
                     <option value="latte" selected>latte</option>
                   </optgroup>
@@ -331,9 +331,60 @@
             </p> -->
             </fieldset>
 
-            <br>
+            <br />
 
+            <fieldset>
+              <legend>what is your favorite food?</legend>
+              <p>
+                <input type="radio" name="food" id="tacos" value="tacos" />
+                <label for="tacos">tacos</label>
+              </p>
+              <p>
+                <input type="radio" name="food" id="pizza" value="pizza" />
+                <label for="pizza">pizza</label>
+              </p>
+              <p>
+                <input type="radio" name="food" id="other" value="other" />
+                <label for="other">other</label>
+              </p>
+            </fieldset>
 
+            <br />
+
+            <fieldset>
+              <legend>do you have pets?</legend>
+              <p>
+                <input type="checkbox" name="pets" id="dog" value="dog" />
+                <label for="dog">dog</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="cat" value="cat" />
+                <label for="cat">cat</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="fish" value="fish" />
+                <label for="fish">fish</label>
+              </p>
+              <p>
+                <input type="checkbox" name="pets" id="otherpet" value="otherpet" />
+                <label for="otherpet">other pet</label>
+              </p>
+            </fieldset>
+
+            <br />
+
+            <fieldset>
+              <legend>send me a note</legend>
+              <label for="message">you message:</label>
+              <br />
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="type your message here"></textarea>
+            </fieldset>
+
+            <br />
+
+            <button type="submit">submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">post</button>
+            <button type="reset">reset</button>
           </form>
         </section>
       </article>
