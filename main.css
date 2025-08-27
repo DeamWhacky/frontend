@@ -1,5 +1,6 @@
 html {
-  font-size: 22px;
+  font-size: 18px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
@@ -20,9 +21,33 @@ a:active {
   color: #eee;
 }
 
-table, tr, th, td, caption {
+table,
+tr,
+th,
+td,
+caption {
   border: 1px solid #eee;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   border-collapse: collapse;
   padding: 0.5em;
+}
+
+.para1 {
+  color: rgb(181, 181, 200);
+}
+
+#p2 {
+  color: rgb(238, 182, 182);
+}
+
+h1 em {
+  color: rgb(207, 245, 245);
+}
+
+.\31 2 {
+  color: blanchedalmond;
+}
+
+#\31 1 {
+  color: antiquewhite;
 }
