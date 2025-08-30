@@ -21,3 +21,26 @@ if !important is present, it will override everything even if it has low specifi
 
 so if multiple rulesets apply to the same element:
  first, importance is checked -> then specificity (if all important or none) -> then cascading (if equal specificity and importance)
+
+ 2> absolute and relative units
+
+ ^px
+ basic, used for borders and other absolute details, not for setting font size (browser should handle that)
+
+ ^%
+ takes value relative to the parent for that property
+
+ ^rem
+ takes value relative to the root that is the html element
+
+ ^em
+ similar to % when used for properties in compounding children
+ another use is to pair it properties like padding with font size
+ eg:
+    span {
+        font-size: 3rem; //here font-size for span takes 3 times the root size
+        padding: 0.5em;  //here padding is relative to its own font-size, so 0.5em means 1.5 times the root size
+    }
+
+note: rem is a fixed unit, 0.5 rem used in 2 different rulesets mean the same size because its dependent on the root and theres always only 1 root
+this is not true for %, 50 percent used in 2 rulesets does not guarantee the same size because its dependent on its parent
