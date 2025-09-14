@@ -21,6 +21,27 @@ if !important is present, it will override everything even if it has low specifi
 
 so if multiple rulesets apply to the same element:
  first, importance is checked -> then specificity (if all important or none) -> then cascading (if equal specificity and importance)
+ a id selector will always have more specificity than a class selector
+    for eg :
+        body article .checkclass {
+            --
+        }
+        article #checkid {
+            --
+        }
+
+    here the second ruleset will be valid because id is more specific, so we dont need to bother with calculating specificity
+
+    but for eg:
+        body article .checkclass {
+            --
+        }
+        article .checkclass {
+            --
+        } 
+
+    here we do need to calculate specificity because both have elements and class selectors, using calculation we find the first to be more specific
+
 
  2> absolute and relative units
 
