@@ -62,6 +62,11 @@ so if multiple rulesets apply to the same element:
         font-size: 3rem; //here font-size for span takes 3 times the root size
         padding: 0.5em;  //here padding is relative to its own font-size, so 0.5em means 1.5 times the root size
     }
+ ^vw
+ viewport width, used to increase/decrease element width, % also works, sometimes better
 
+ ^vh
+ viewport height, used to increase/decrease element height
+ 
 note: rem is a fixed unit, 0.5 rem used in 2 different rulesets mean the same size because its dependent on the root and theres always only 1 root
 this is not true for %, 50 percent used in 2 rulesets does not guarantee the same size because its dependent on its parent
